@@ -3,9 +3,7 @@
 body {
     display:flex;
     flex-direction: column;
-    height: 100vh;
     margin: 0;
-    overflow: hidden;
  
 
 }
@@ -16,7 +14,7 @@ body {
     height: 400px;
     display: flex;
     flex-direction: column;
-    padding: 3rem 12rem 0 12rem;
+    padding: 1rem 12rem 0 12rem;
     
 
 
@@ -69,6 +67,7 @@ ul {
 .hero-subtext {
     font-size: 18px;
     color: #E5E7EB;
+    padding-bottom: 10px;
 
 
 }
@@ -77,11 +76,17 @@ button {
     background-color: #3882f6;
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 15px 15px;
+    justify-content: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px; }
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 125px; 
+}
+
+
 
 .header-image {
 
@@ -95,40 +100,123 @@ img {
 }
 
 
+.cta-container button {
+    border: solid 2px white;
+}
+
 .main-top {
-    height: 200px;
+    min-height: auto;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+
 
 
 }
+
+
+.main-top-text {
+
+    color:#1F2937;
+    font-size: 36px;
+    font-weight: extra-bold;
+    padding-bottom: 30px;
+    
+}
+
+
+.main-images img {
+    max-width: 300px;
+    max-height: 200px;
+    border: solid 5px #3882f6;
+    border-radius: 5px;
+}
+
+
+.main-images {
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+ 
+
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 
 .main-quote {
     height: 200px;
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
     font-weight: light;
+    width: 25%;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .quote-attribution {
+
+    font-size: 18px;
+    font-weight: bold;
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
     justify-content: flex-end;
-    font-style: normal;
-    font-size: small;
+
 }
 
 .main-cta {
-    height: 200px;
+    height: 400px;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cta-container {
+    background-color: #3882f6;
+    padding: 40px 100px;
+    height: 100px;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+
 }
 
 .footer {
     background-color: #1F2937;
-    height: 200px;
+    height: 75px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
